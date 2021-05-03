@@ -1,18 +1,95 @@
 <!DOCTYPE html>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <html>
     <style>
-        img { display: block;
-        margin: 0 auto;}
-        form { text-align: center;}
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+        img { 
+            display: block;
+            margin: 0 auto;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 100px;
+            }
+        .toplist {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            width: 100%;
+        }
+        .bottomlist{
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            padding: 14px 16px;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            border-radius: 25%;
+            padding: 10px
+        }
+        footer{
+            background-color: gray;
+            position: fixed;
+            bottom: 0;
+            left:0;
+            width: 100%;
+        }
+        .searchbar{
+            width: 500px;
+            height: 3em;
+            border: 0.1px solid gray;
+            border-radius: 30px;
+        }
     </style>
   <head>
     <meta charset="utf-8">
     <title>Google</title>
   </head>
   <body>
+      <header>
+          <ul class="toplist">
+              <li>About</li>
+              <li>Store</li>
+              <li style="float:right"><button type="button">Sign in</button></li>
+              <li style="float:right"><span class="material-icons">
+                apps
+                </span></li>
+              <li style="float:right">Images</li>
+              <li style="float:right">Gmail</li>
+          </ul>
+      </header>
+      <main><div>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-  <form><input type="text"><br>
+  <form><div class="searchbar"><span class="material-icons">
+    search
+    </span><input type="text"></div><br>
     <input type="submit" value="Google Search">
     <input type="submit" value="I'm feeling Lucky">
-</form></body>
+</form></div></main>
+
+<footer><p>United Kingdom</p><br><ul class="bottomlist">
+    <li style="float:left">Advertising</li>
+    <li style="float:left">Business</li>
+    <li style="float:left">How Search works</li>
+    <li>Carbon neutral since 2007</li>
+    <li style="float:right">Settings</li>
+    <li style="float:right">Terms</li>
+    <li style="float:right">Privacy</li>
+</ul>
+</footer></body>
 </html>
