@@ -1,95 +1,51 @@
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
 
 <html>
-    <style>
 
-body{
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-}
-        img { 
-            display: block;
-            margin: 0 auto;
-        }
-        main{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 100px;
-            }
-        .toplist {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            top: 0;
-            width: 100%;
-        }
-        .bottomlist{
-            text-align: center;
-        }
-        li {
-            display: inline-block;
-            padding: 14px 16px;
-        }
-        button{
-            background-color: blue;
-            color: white;
-            border-radius: 25%;
-            padding: 10px
-        }
-        footer{
-            background-color: gray;
-            position: fixed;
-            bottom: 0;
-            left:0;
-            width: 100%;
-        }
-        .searchbar{
-            width: 500px;
-            height: 3em;
-            border: 0.1px solid gray;
-            border-radius: 30px;
-        }
-    </style>
   <head>
     <meta charset="utf-8">
     <title>Google</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
       <header>
           <ul class="toplist">
               <li>About</li>
-              <li>Store</li>
-              <li style="float:right"><button type="button">Sign in</button></li>
-              <li style="float:right"><span class="material-icons">
+              <li id="store">Store</li>
+              <li>Gmail</li>
+              <li>Images</li>
+              <li><span class="material-icons">
                 apps
                 </span></li>
-              <li style="float:right">Images</li>
-              <li style="float:right">Gmail</li>
+                <li><button type="button">Sign in</button></li>
+
           </ul>
       </header>
       <main><div>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-  <form><div class="searchbar"><span class="material-icons">
+  <form><div class="searchbar"><span class="material-icons" id="searchicon">
     search
-    </span><input type="text"></div><br>
-    <input type="submit" value="Google Search">
-    <input type="submit" value="I'm feeling Lucky">
+    </span><input id="searchinput" type="text" ></div><br>
+    <div class="searchbuttoncontainer">
+    <input class="searchbutton" type="submit" value="Google Search">
+    <input class="searchbutton" type="submit" value="I'm feeling Lucky">
+</div>
 </form></div></main>
 
-<footer><p>United Kingdom</p><br><ul class="bottomlist">
-    <li style="float:left">Advertising</li>
-    <li style="float:left">Business</li>
-    <li style="float:left">How Search works</li>
-    <li>Carbon neutral since 2007</li>
-    <li style="float:right">Settings</li>
-    <li style="float:right">Terms</li>
-    <li style="float:right">Privacy</li>
-</ul>
-</footer></body>
+<footer>
+    <p id="footertext">United Kingdom</p>
+    <div class="bottomlist">
+    <div><ul style="padding-left: 0"><li>Advertising</li>
+    <li>Business</li>
+    <li>How Search works</li></ul></div>
+<div><ul><li id="carbon"><img id="leaficon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="leaf">Carbon neutral since 2007</li></div>
+<div><ul><li>Privacy</li>
+    <li>Terms</li>
+        <li>Settings</li></ul></div>
+
+    </div>
+</footer>
+</body>
 </html>
