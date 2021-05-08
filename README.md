@@ -2,8 +2,8 @@
 
 The Odin Project: Build the Google homepage<br><br>
 
-TO DO:
--add hover actions
--general tidy/renaming
--add further styling to get it perfect/more responsive
+TO DO:<br>
+-add hover actions<br>
+-general tidy/renaming<br>
+-add further styling to get it perfect/more responsive<br>
 -add some javascript?
