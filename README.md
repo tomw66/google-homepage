@@ -1,6 +1,6 @@
 # google-homepage
 
-The Odin Project: Build the Google homepage
+The Odin Project: Build the Google homepage<br><br>
 
 TO DO:
 -add hover actions
